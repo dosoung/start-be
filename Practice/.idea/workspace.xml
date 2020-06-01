@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7dbf9f35-b3de-4d09-9625-d424dd71860e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/ConnectionMaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/JejuConnectionMaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/HallaUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/JejuUserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/src/test/java/kr/ac/jejunu/user/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/test/java/kr/ac/jejunu/user/UserDaoTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/userdao">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/userdao">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1ci5e8Z1ntb31cakxwTLUlA6NCY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="jdk.selected.JAVA_MODULE" value="11" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kr.ac.jejunu.user" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.UserDaoTest">
+    <configuration name="UserDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userdao" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;kr.ac.jejunu.user.UserDaoTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserDaoTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userdao" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;kr.ac.jejunu.user.UserDaoTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.UserDaoTests" />
+      <item itemvalue="Gradle.UserDaoTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.UserDaoTest" />
+        <item itemvalue="Gradle.UserDaoTests" />
+        <item itemvalue="Gradle.UserDaoTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7dbf9f35-b3de-4d09-9625-d424dd71860e" name="Default Changelist" comment="" />
+      <created>1590998666287</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590998666287</updated>
+      <workItem from="1590998669911" duration="13499000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="320" y="115" key="#Project_Structure" timestamp="1591012363248">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="320" y="115" key="#Project_Structure/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591012363248" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591019164299">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591019164299" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1591022157804">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591022157804" />
+    <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019838917" />
+    <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590999034477">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="569" y="357" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1590999034477" />
+    <state x="486" y="316" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1590999190954">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="486" y="316" width="467" height="276" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1590999190954" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591019791361">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591017992864" />
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019791361" />
+    <state width="1398" height="247" key="GridCell.Tab.0.bottom" timestamp="1591022185233">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="247" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591022185233" />
+    <state width="1398" height="247" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019869424" />
+    <state width="1398" height="247" key="GridCell.Tab.0.center" timestamp="1591022185230">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="247" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591022185230" />
+    <state width="1398" height="247" key="GridCell.Tab.0.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019869423" />
+    <state width="1398" height="247" key="GridCell.Tab.0.left" timestamp="1591022185229">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="247" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591022185229" />
+    <state width="1398" height="247" key="GridCell.Tab.0.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019869423" />
+    <state width="1398" height="247" key="GridCell.Tab.0.right" timestamp="1591022185232">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="247" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591022185232" />
+    <state width="1398" height="247" key="GridCell.Tab.0.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019869424" />
+    <state x="380" y="153" width="679" height="590" key="RefactorJ.ExtractClass" timestamp="1591021598371">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="380" y="153" width="679" height="590" key="RefactorJ.ExtractClass/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591021598371" />
+    <state x="521" y="375" key="ReplaceDuplicatesPrompt" timestamp="1591019743660">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="521" y="375" key="ReplaceDuplicatesPrompt/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591019743660" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1590999930327">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1590999930327" />
+    <state x="503" y="235" key="chooseDestDirectoryDialog" timestamp="1591019835378">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591014255741" />
+    <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019835378" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1590998670416">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1590998670416" />
+    <state x="458" y="210" width="542" height="484" key="extract.method.dialog" timestamp="1591021659868">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="458" y="210" width="542" height="484" key="extract.method.dialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591021659868" />
+    <state x="97" y="72" key="new project wizard" timestamp="1590998936050">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="97" y="72" key="new project wizard/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1590998936050" />
+    <state x="482" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1591022048758">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="482" y="63" key="refactoring.ChangeSignatureDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591022048758" />
+    <state x="385" y="210" key="run.anything.popup" timestamp="1591019423950">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="210" key="run.anything.popup/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591019423950" />
+  </component>
+</project>
