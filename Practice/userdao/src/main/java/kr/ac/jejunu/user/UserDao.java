@@ -12,45 +12,150 @@ public class UserDao {
 
     public User get(Integer id) throws ClassNotFoundException, SQLException {
 
-        Connection connection = dataSource.getConnection();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        User user = null;
+        try {
+            connection = dataSource.getConnection();
 
-        PreparedStatement preparedStatement = connection.prepareStatement("select id,name,password from userinfo where id=?");
-        preparedStatement.setInt(1,id);
+            preparedStatement = connection.prepareStatement("select id,name,password from userinfo where id=?");
+            preparedStatement.setInt(1,id);
 
 
-        ResultSet resultSet = preparedStatement.executeQuery();
-        resultSet.next();
+            resultSet = preparedStatement.executeQuery();
 
-        User user = new User();
-        user.setId(resultSet.getInt("id"));
-        user.setName(resultSet.getString("name"));
-        user.setPassword(resultSet.getString("password"));
+            if(resultSet.next()) {
+                user = new User();
+                user.setId(resultSet.getInt("id"));
+                user.setName(resultSet.getString("name"));
+                user.setPassword(resultSet.getString("password"));
+            }
+        } finally {
 
-        resultSet.close();
-        preparedStatement.close();
-        connection.close();
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+        }
+
 
         return user;
     }
 
     public void insert(User user) throws ClassNotFoundException, SQLException {
-        Connection connection = dataSource.getConnection();
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = dataSource.getConnection();
 
-        PreparedStatement preparedStatement = connection.prepareStatement("insert into userinfo(name,password)value(?,?)",Statement.RETURN_GENERATED_KEYS);
-        preparedStatement.setString(1,user.getName());
-        preparedStatement.setString(2,user.getPassword());
+            preparedStatement = connection.prepareStatement("insert into userinfo(name,password)value(?,?)", Statement.RETURN_GENERATED_KEYS);
+            preparedStatement.setString(1,user.getName());
+            preparedStatement.setString(2,user.getPassword());
 
-        preparedStatement.executeUpdate();
-        ResultSet resultSet = preparedStatement.getGeneratedKeys();
-        resultSet.next();
+            preparedStatement.executeUpdate();
+            resultSet = preparedStatement.getGeneratedKeys();
+            resultSet.next();
 
-        user.setId(resultSet.getInt(1));
+            user.setId(resultSet.getInt(1));
+        } finally {
+
+            try {
+                resultSet.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+
+            }
+
+        }
+
+    }
+
+    public void update(User user) {
+
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        try {
+            connection = dataSource.getConnection();
+
+            preparedStatement = connection.prepareStatement("update userinfo set name =? ,password=? where id=?");
+            preparedStatement.setString(1,user.getName());
+            preparedStatement.setString(2,user.getPassword());
+            preparedStatement.setInt(3,user.getId());
+
+            preparedStatement.executeUpdate();
 
 
-        resultSet.close();
-        preparedStatement.close();
-        connection.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
 
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+
+            }
+
+        }
+
+    }
+
+    public void delete(Integer id) {
+        Connection connection = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        User user = null;
+        try {
+            connection = dataSource.getConnection();
+
+            preparedStatement = connection.prepareStatement("delete from userinfo where id= ?");
+            preparedStatement.setInt(1,id);
+            preparedStatement.executeUpdate();
+
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+
+            try {
+                preparedStatement.close();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
+            try {
+                connection.close();
+            } catch (SQLException e) {
+
+            }
+
+        }
 
     }
 
