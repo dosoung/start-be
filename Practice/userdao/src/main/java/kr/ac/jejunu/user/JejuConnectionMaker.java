@@ -10,6 +10,6 @@ public class JejuConnectionMaker implements ConnectionMaker {
         Class.forName("com.mysql.cj.jdbc.Driver");
         return DriverManager.getConnection("jdbc:mysql://localhost/jeju?serverTimezone=UTC"
                 , "jeju", "1234");
-    }
 
+    }
 }
