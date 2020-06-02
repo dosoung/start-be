@@ -1,5 +1,6 @@
 package kr.ac.jejunu.user;
 
+
 import org.hamcrest.core.IsNull;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -12,24 +13,28 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.core.Is.is;
 
+
 public class UserDaoTests {
     Integer id = 1;
-    String name = "도현";
-    String password = "1234";
+    String password="1234";
+    String name="도현";
 
-    private static UserDao userDao;
+   private static UserDao userDao;
 
-    @BeforeAll
-    public static void setup() {
+   @BeforeAll
+   public static void setup() {
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(DaoFactory.class);
         userDao = applicationContext.getBean("userDao",UserDao.class);
     }
 
+
     @Test
     public void get() throws SQLException, ClassNotFoundException {
 
+
         User user = userDao.get(id);
-        assertThat(user.getId(),is(id));
+
+        assertThat(user.getId(), is(id));
         assertThat(user.getName(),is(name));
         assertThat(user.getPassword(),is(password));
     }
@@ -42,27 +47,25 @@ public class UserDaoTests {
         user.setPassword(password);
 
         userDao.insert(user);
-
         assertThat(user.getId(),greaterThan(0));
-        System.out.println(user.getId());
-
         User insertedUser = userDao.get(user.getId());
-        assertThat(insertedUser.getPassword(),is(password));
         assertThat(insertedUser.getName(),is(name));
+        assertThat(insertedUser.getPassword(),is(password));
 
     }
 
     @Test
     public void update() throws SQLException, ClassNotFoundException {
+
         User user = new User();
         user.setName(name);
         user.setPassword(password);
 
         userDao.insert(user);
 
-        String updatedName="테슬라";
+        String updatedName = "테슬라";
+        String updatedPassword ="7777";
         user.setName(updatedName);
-        String updatedPassword="111111";
         user.setPassword(updatedPassword);
 
         userDao.update(user);
@@ -70,16 +73,17 @@ public class UserDaoTests {
         User updatedUser = userDao.get(user.getId());
         assertThat(updatedUser.getName(),is(updatedName));
         assertThat(updatedUser.getPassword(),is(updatedPassword));
+
     }
 
     @Test
     public void delete() throws SQLException, ClassNotFoundException {
-
         User user = new User();
         user.setName(name);
         user.setPassword(password);
 
         userDao.insert(user);
+
         userDao.delete(user.getId());
 
         User deletedUser = userDao.get(user.getId());
@@ -87,5 +91,5 @@ public class UserDaoTests {
 
     }
 
-//
+
 }
