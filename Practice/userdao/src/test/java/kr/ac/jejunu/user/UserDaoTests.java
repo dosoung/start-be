@@ -12,7 +12,6 @@ import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.core.Is.is;
 
 public class UserDaoTests {
-
     Integer id = 1;
     String name = "도현";
     String password = "1234";
@@ -35,22 +34,22 @@ public class UserDaoTests {
     }
 
     @Test
-    public void insert() throws SQLException, ClassNotFoundException{
+    public void insert() throws SQLException, ClassNotFoundException {
 
         User user = new User();
         user.setName(name);
         user.setPassword(password);
+
         userDao.insert(user);
 
         assertThat(user.getId(),greaterThan(0));
+        System.out.println(user.getId());
 
         User insertedUser = userDao.get(user.getId());
-
-        assertThat(insertedUser.getName(),is(name));
         assertThat(insertedUser.getPassword(),is(password));
-
-
+        assertThat(insertedUser.getName(),is(name));
 
     }
 
+//
 }
