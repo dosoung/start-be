@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="kr.ac.jejunu.user.UserDaoTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-06-02T07:47:39" hostname="DOHYUNs-MacBook-Pro.local" time="0.486">
+<testsuite name="kr.ac.jejunu.user.UserDaoTests" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-06-02T08:02:41" hostname="DOHYUNs-MacBook-Pro.local" time="0.545">
   <properties/>
-  <testcase name="insert()" classname="kr.ac.jejunu.user.UserDaoTests" time="0.467"/>
-  <testcase name="get()" classname="kr.ac.jejunu.user.UserDaoTests" time="0.018"/>
-  <system-out><![CDATA[33
+  <testcase name="insert()" classname="kr.ac.jejunu.user.UserDaoTests" time="0.518"/>
+  <testcase name="get()" classname="kr.ac.jejunu.user.UserDaoTests" time="0.026"/>
+  <system-out><![CDATA[35
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
