@@ -1,38 +1,64 @@
 package kr.ac.jejunu.user;
 
-import javax.sql.DataSource;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowCallbackHandler;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
+
 import java.sql.*;
 
 public class UserDao {
-    private final JdbcContext jdbcContext;
-    public UserDao(JdbcContext jdbcContext) {
-        this.jdbcContext=jdbcContext;
+    private final JdbcTemplate jdbcTemplate;
+
+    public UserDao(JdbcTemplate jdbcTemplate) {
+        this.jdbcTemplate = jdbcTemplate;
     }
 
-    public User get(Integer id) throws SQLException {
-        StatementStrategy statementStrategy = new GetStatementStrategy(id);
+    public User getId(Integer id) throws  SQLException {
 
-        User user = jdbcContext.jdbcContextForGet(statementStrategy);
-
-        return user;
+        Object[] params = new Object[] {id};
+        String sql = "select id,name,password from userinfo where id=?";
+        return jdbcTemplate.query(sql,params, rs -> {
+            User user = null;
+            if(rs.next()) {
+                user = new User();
+                user.setId(rs.getInt("id"));
+                user.setName(rs.getString("name"));
+                user.setPassword(rs.getString("password"));
+            }
+            return user;
+        });
     }
 
     public void insert(User user) throws  SQLException {
-        StatementStrategy statementStrategy = new InsertStatementStrategy(user);
 
-        jdbcContext.jdbcContextForInsert(user, statementStrategy);
+        Object[] params = new Object[] {user.getName(),user.getPassword()};
+        String sql = "insert into userinfo(name,password)value(?,?)";
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        jdbcTemplate.update(con -> {
+            PreparedStatement preparedStatement = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 
+            for (int i = 0; i < params.length; i++) {
+                preparedStatement.setObject(i + 1, params[i]);
+            }
+            return preparedStatement;
+        },keyHolder);
+        user.setId(keyHolder.getKey().intValue());
     }
 
-    public void update(User user)  {
-        StatementStrategy statementStrategy = new UpdateStatementStrategy(user);
-        jdbcContext.jdbcContextForUpdateDelete(statementStrategy);
+    public void update(User user) throws SQLException {
+        String sql ="update userinfo set name =?,password=? where id=?";
+        Object[] params = new Object[] {user.getName(),user.getPassword(),user.getId()};
+
+        jdbcTemplate.update(sql,params);
 
     }
 
     public void delete(Integer id) {
-        StatementStrategy statementStrategy = new DeleteStatementStrategy(id);
-        jdbcContext.jdbcContextForUpdateDelete(statementStrategy);
+        Object[] params = new Object[] {id};
+        String sql = "delete from userinfo where id=?";
+
+        jdbcTemplate.update(sql,params);
 
     }
 
