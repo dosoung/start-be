@@ -19,7 +19,7 @@ public class UserDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
-    public User getId(Integer id) throws  SQLException {
+    public User getId(Integer id)  {
 
         Object[] params = new Object[] {id};
         String sql = "select id,name,password from userinfo where id=?";
@@ -35,7 +35,7 @@ public class UserDao {
         });
     }
 
-    public void insert(User user) throws  SQLException {
+    public void insert(User user)  {
 
         Object[] params = new Object[] {user.getName(),user.getPassword()};
         String sql = "insert into userinfo(name,password)value(?,?)";
@@ -51,7 +51,7 @@ public class UserDao {
         user.setId(keyHolder.getKey().intValue());
     }
 
-    public void update(User user) throws SQLException {
+    public void update(User user){
         String sql ="update userinfo set name =?,password=? where id=?";
         Object[] params = new Object[] {user.getName(),user.getPassword(),user.getId()};
 

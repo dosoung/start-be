@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Gradle : kr.ac.jejunu : userdao-0.0.1-SNAPSHOT.war (exploded)" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbf9f35-b3de-4d09-9625-d424dd71860e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/userdao/src/main/resources/daoFacotry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userdao/src/main/resources/daoFactory.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdao/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userdao/src/test/java/kr/ac/jejunu/user/LombokTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -18,18 +26,19 @@
       <change beforePath="$PROJECT_DIR$/userdao/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/DaoFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/DaoFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/JdbcContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/JdbcContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/StatementStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/StatementStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/classes/java/main/kr/ac/jejunu/user/UserDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/build/classes/java/test/kr/ac/jejunu/user/UserDaoTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/classes/java/test/kr/ac/jejunu/user/UserDaoTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/classes/kr.ac.jejunu.user.UserDaoTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/packages/kr.ac.jejunu.user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/reports/tests/test/packages/kr.ac.jejunu.user.html" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/reports/tests/test/packages/kr.ac.jejunu.user.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/build/test-results/test/TEST-kr.ac.jejunu.user.UserDaoTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/test-results/test/binary/results.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +78,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
   <component name="ProjectId" id="1ci5e8Z1ntb31cakxwTLUlA6NCY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -87,6 +103,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -96,7 +113,27 @@
       <recent name="kr.ac.jejunu.user" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.UserDaoTests">
+  <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration name="LombokTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/userdao" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;kr.ac.jejunu.user.LombokTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="UserDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -145,17 +182,153 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.35" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment>
+        <artifact name="Gradle : kr.ac.jejunu : userdao-0.0.1-SNAPSHOT.war (exploded)">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_Practice" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="56125" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_CLASSNAME" />
+          <option name="VALUE" value="com.mysql.cj.jdbc.Driver" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_USERNAME" />
+          <option name="VALUE" value="jeju" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_URL" />
+          <option name="VALUE" value="jdbc:mysql://localhost/jeju?serverTimezone=UTC" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_PASSWORD" />
+          <option name="VALUE" value="1234" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_CLASSNAME" />
+          <option name="VALUE" value="com.mysql.cj.jdbc.Driver" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_USERNAME" />
+          <option name="VALUE" value="jeju" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_URL" />
+          <option name="VALUE" value="jdbc:mysql://localhost/jeju?serverTimezone=UTC" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+        <EnvironmentVariables>
+          <option name="NAME" value="DB_PASSWORD" />
+          <option name="VALUE" value="1234" />
+          <option name="IS_PREDEFINED" value="false" />
+        </EnvironmentVariables>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : kr.ac.jejunu : userdao-0.0.1-SNAPSHOT.war (exploded)" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.UserDaoTests" />
       <item itemvalue="Gradle.UserDaoTest" />
+      <item itemvalue="Gradle.LombokTests" />
+      <item itemvalue="Tomcat Server.tomcat" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.LombokTests" />
         <item itemvalue="Gradle.UserDaoTests" />
         <item itemvalue="Gradle.UserDaoTest" />
         <item itemvalue="Gradle.UserDaoTests" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -171,6 +344,7 @@
       <workItem from="1591022728372" duration="27129000" />
       <workItem from="1591597319004" duration="902000" />
       <workItem from="1591608383459" duration="11236000" />
+      <workItem from="1591678150436" duration="2383000" />
     </task>
     <servers />
   </component>
@@ -182,11 +356,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="320" y="115" key="#Project_Structure/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591095876167" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591097877062">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591685144059">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591097877062" />
-    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591097553632" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685144059" />
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591685061293" />
     <state x="533" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1591616878214">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -217,51 +391,87 @@
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591608479795" />
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591079155244" />
-    <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1591097875292">
+    <state x="474" y="222" key="EnvironmentVariablesDialog" timestamp="1591685091159">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591097875292" />
-    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591097552809" />
-    <state width="1398" height="180" key="GridCell.Tab.0.bottom" timestamp="1591678276426">
+    <state x="474" y="222" key="EnvironmentVariablesDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591685091159" />
+    <state width="958" height="245" key="GridCell.Tab.0.bottom" timestamp="1591685152011">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="180" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591678276426" />
-    <state width="1398" height="247" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591619457227" />
+    <state width="958" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685152011" />
+    <state width="958" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430496" />
     <state width="1398" height="247" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591341438332" />
-    <state width="1398" height="180" key="GridCell.Tab.0.center" timestamp="1591678276425">
+    <state width="958" height="245" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705769" />
+    <state width="958" height="245" key="GridCell.Tab.0.center" timestamp="1591685152009">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="180" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591678276425" />
-    <state width="1398" height="247" key="GridCell.Tab.0.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591619457225" />
+    <state width="958" height="245" key="GridCell.Tab.0.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685152009" />
+    <state width="958" height="245" key="GridCell.Tab.0.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430493" />
     <state width="1398" height="247" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591341438331" />
-    <state width="1398" height="180" key="GridCell.Tab.0.left" timestamp="1591678276424">
+    <state width="958" height="245" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705767" />
+    <state width="958" height="245" key="GridCell.Tab.0.left" timestamp="1591685152009">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="180" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591678276424" />
-    <state width="1398" height="247" key="GridCell.Tab.0.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591619457225" />
+    <state width="958" height="245" key="GridCell.Tab.0.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685152009" />
+    <state width="958" height="245" key="GridCell.Tab.0.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430491" />
     <state width="1398" height="247" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591341438331" />
-    <state width="1398" height="180" key="GridCell.Tab.0.right" timestamp="1591678276426">
+    <state width="958" height="245" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705767" />
+    <state width="958" height="245" key="GridCell.Tab.0.right" timestamp="1591685152010">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="180" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591678276426" />
-    <state width="1398" height="247" key="GridCell.Tab.0.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591619457226" />
+    <state width="958" height="245" key="GridCell.Tab.0.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685152010" />
+    <state width="958" height="245" key="GridCell.Tab.0.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430495" />
     <state width="1398" height="247" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591341438332" />
-    <state width="1398" height="85" key="GridCell.Tab.1.bottom" timestamp="1591677319274">
+    <state width="958" height="245" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705768" />
+    <state width="958" height="245" key="GridCell.Tab.1.bottom" timestamp="1591685151910">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="85" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591677319274" />
-    <state width="1398" height="85" key="GridCell.Tab.1.center" timestamp="1591677319273">
+    <state width="958" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151910" />
+    <state width="958" height="245" key="GridCell.Tab.1.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430121" />
+    <state width="958" height="245" key="GridCell.Tab.1.bottom/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705667" />
+    <state width="958" height="245" key="GridCell.Tab.1.center" timestamp="1591685151909">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="85" key="GridCell.Tab.1.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591677319273" />
-    <state width="1398" height="85" key="GridCell.Tab.1.left" timestamp="1591677319273">
+    <state width="958" height="245" key="GridCell.Tab.1.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151909" />
+    <state width="958" height="245" key="GridCell.Tab.1.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430119" />
+    <state width="958" height="245" key="GridCell.Tab.1.center/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705665" />
+    <state width="958" height="245" key="GridCell.Tab.1.left" timestamp="1591685151908">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="85" key="GridCell.Tab.1.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591677319273" />
-    <state width="1398" height="85" key="GridCell.Tab.1.right" timestamp="1591677319274">
+    <state width="958" height="245" key="GridCell.Tab.1.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151908" />
+    <state width="958" height="245" key="GridCell.Tab.1.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430118" />
+    <state width="958" height="245" key="GridCell.Tab.1.left/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705665" />
+    <state width="958" height="245" key="GridCell.Tab.1.right" timestamp="1591685151910">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="85" key="GridCell.Tab.1.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591677319274" />
+    <state width="958" height="245" key="GridCell.Tab.1.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151910" />
+    <state width="958" height="245" key="GridCell.Tab.1.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430120" />
+    <state width="958" height="245" key="GridCell.Tab.1.right/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705666" />
+    <state width="958" height="245" key="GridCell.Tab.2.bottom" timestamp="1591685151915">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="958" height="245" key="GridCell.Tab.2.bottom/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151915" />
+    <state width="958" height="245" key="GridCell.Tab.2.bottom/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430127" />
+    <state width="958" height="245" key="GridCell.Tab.2.bottom/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705669" />
+    <state width="958" height="245" key="GridCell.Tab.2.center" timestamp="1591685151912">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="958" height="245" key="GridCell.Tab.2.center/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151912" />
+    <state width="958" height="245" key="GridCell.Tab.2.center/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430123" />
+    <state width="958" height="245" key="GridCell.Tab.2.center/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705668" />
+    <state width="958" height="245" key="GridCell.Tab.2.left" timestamp="1591685151911">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="958" height="245" key="GridCell.Tab.2.left/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151911" />
+    <state width="958" height="245" key="GridCell.Tab.2.left/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430122" />
+    <state width="958" height="245" key="GridCell.Tab.2.left/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705668" />
+    <state width="958" height="245" key="GridCell.Tab.2.right" timestamp="1591685151914">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="958" height="245" key="GridCell.Tab.2.right/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591685151914" />
+    <state width="958" height="245" key="GridCell.Tab.2.right/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684430126" />
+    <state width="958" height="245" key="GridCell.Tab.2.right/0.23.1440.877/-1920.23.1920.1057@0.23.1440.877" timestamp="1591684705669" />
     <state x="380" y="153" width="679" height="530" key="RefactorJ.ExtractClass" timestamp="1591617355267">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -275,6 +485,11 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="413" y="168" key="RollbackChangesDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591157763260" />
+    <state x="221" y="89" key="SettingsEditor" timestamp="1591684417422">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591683408669" />
+    <state x="221" y="89" key="SettingsEditor/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591684417422" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1590999930327">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
