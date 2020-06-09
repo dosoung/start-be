@@ -23,15 +23,15 @@ public class DaoFactory {
     @Value("${db.password}")
     private String password;
 
+//    @Bean
+//    public UserDao userDao() throws ClassNotFoundException {
+//        return new UserDao(jdbcContext());
+//    }
     @Bean
-    public UserDao userDao() throws ClassNotFoundException {
-        return new UserDao(jdbcContext());
-    }
-
-    private JdbcTemplate jdbcContext() throws ClassNotFoundException {
+    public JdbcTemplate jdbcContext() throws ClassNotFoundException {
         return new JdbcTemplate(dataSource());
     }
-
+    @Bean
     public DataSource dataSource() throws ClassNotFoundException {
 
         SimpleDriverDataSource dataSource= new SimpleDriverDataSource();
