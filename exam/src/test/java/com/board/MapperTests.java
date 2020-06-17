@@ -1,5 +1,7 @@
 package com.board;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,5 +25,21 @@ class MapperTests {
         int result = boardMapper.insertBoard(params);
         System.out.println("결과는 " + result + "입니다.");
     }
+
+    @Test
+    public void testOfSelectDetail() {
+        BoardDTO board = boardMapper.selectBoardDetail((long) 1);
+        try {
+            String boardJson = new ObjectMapper().writeValueAsString(board);
+
+            System.out.println("=========================");
+            System.out.println(boardJson);
+            System.out.println("=========================");
+
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 }
