@@ -10,17 +10,24 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.*;
 
 @Controller
-@RequestMapping
 @RequiredArgsConstructor
 public class UserController {
     private final UserDao userDao;
 
-    @RequestMapping("/user")
-    public User getUser(@RequestParam("id") Integer id) {
-        return userDao.getId(id);
+    @RequestMapping(path = "/user")
+    public User getUser(@RequestParam("id") Integer id, HttpServletRequest request, HttpServletResponse response
+            , HttpSession session) {
+        User user = (User) session.getAttribute("user");
+        if(user == null)
+            user = userDao.getId(id);
+        session.setAttribute("user",User.builder().name("Session").build());
+        System.out.println(user);
+        return user;
     }
 
     @RequestMapping("/exception")
@@ -35,14 +42,14 @@ public class UserController {
 
     @RequestMapping(path="/upload" , method= RequestMethod.POST)
     public ModelAndView upload(@RequestParam("file")MultipartFile file, HttpServletRequest request) throws IOException {
-        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static" + file.getOriginalFilename());
+        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/" + file.getOriginalFilename());
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
         bufferedOutputStream.write(file.getBytes());
         bufferedOutputStream.close();
 
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("url","images"+ file.getOriginalFilename());
+        modelAndView.addObject("url","/images/"+ file.getOriginalFilename());
         return modelAndView;
     }
 
