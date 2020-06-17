@@ -15,6 +15,9 @@ public class UserDao {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    public UserDao(JdbcTemplate jdbcTemplate) {
+    }
+
 //    public UserDao(JdbcTemplate jdbcTemplate) {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
