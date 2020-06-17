@@ -7,9 +7,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7dbf9f35-b3de-4d09-9625-d424dd71860e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/5.2.1/fileChanges/last-build.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/5.2.1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.gradle/vcs-1/gc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/build/tmp/war/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/DaoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/JdbcContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/StatementStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/UserContextListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/UserFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/UserInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/UserRequestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/java/kr/ac/jejunu/user/UserServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/resources/daoFactory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/webapp/WEB-INF/root-context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test/java/kr/ac/jejunu/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test/src/test/java/kr/ac/jejunu/user/UserDaoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/build/libs/exploded/userdao-0.0.1-SNAPSHOT.war/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userdao/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/userdao/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,13 +111,16 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1ci5e8Z1ntb31cakxwTLUlA6NCY" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -450,11 +488,6 @@
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
             </expand>
             <select />
           </treeState>
@@ -481,11 +514,19 @@
       <workItem from="1591608383459" duration="11236000" />
       <workItem from="1591678150436" duration="6022000" />
       <workItem from="1591784411404" duration="6613000" />
+      <workItem from="1592396267557" duration="738000" />
+      <workItem from="1592397520880" duration="7000" />
+      <workItem from="1592401779499" duration="947000" />
+      <workItem from="1592403204963" duration="3000" />
+      <workItem from="1592403285012" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="320" y="115" key="#Project_Structure" timestamp="1591095876167">
@@ -692,20 +733,22 @@
     </state>
     <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591014255741" />
     <state x="503" y="235" key="chooseDestDirectoryDialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591019835378" />
-    <state x="397" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1591784413062">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="397" y="313" key="com.intellij.ide.util.TipDialog" timestamp="1592401786139">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="397" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.-70.1920.1080@0.0.1440.900" timestamp="1591784413062" />
+    <state x="397" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.-70.1920.1080@0.0.1440.900" timestamp="1592397520841" />
     <state x="397" y="298" key="com.intellij.ide.util.TipDialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591678151975" />
+    <state x="397" y="313" key="com.intellij.ide.util.TipDialog/0.23.1440.877/-1920.-47.1920.1057@-1920.-47.1920.1057" timestamp="1592401786139" />
     <state x="458" y="210" width="542" height="484" key="extract.method.dialog" timestamp="1591618526321">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="210" width="542" height="484" key="extract.method.dialog/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591618526321" />
     <state x="458" y="210" key="extract.method.dialog/0.0.1440.900/-1920.23.1920.1057@0.0.1440.900" timestamp="1591618354641" />
-    <state x="97" y="72" key="new project wizard" timestamp="1591597334016">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="-1791" y="38" key="new project wizard" timestamp="1592402285025">
+      <screen x="-1920" y="-47" width="1920" height="1057" />
     </state>
     <state x="97" y="72" key="new project wizard/0.0.1440.900/-1920.0.1920.1080@0.0.1440.900" timestamp="1591597334016" />
+    <state x="-1791" y="38" key="new project wizard/0.23.1440.877/-1920.-47.1920.1057@-1920.-47.1920.1057" timestamp="1592402285025" />
     <state x="482" y="63" key="refactoring.ChangeSignatureDialog" timestamp="1591619073379">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
