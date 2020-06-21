@@ -60,10 +60,8 @@
 	</update>
 
     <update id="deleteBoard" parameterType="long">
-		UPDATE tb_board
-		SET
-			  delete_yn = 'Y'
-			, delete_time = NOW()
+		DELETE from tb_board
+
 		WHERE
 			idx = #{idx}
 	</update>
