@@ -29,63 +29,63 @@ public class UserDaoTests {
 //        ApplicationContext applicationContext = new GenericGroovyApplicationContext("daoFactory.groovy");
         userDao = applicationContext.getBean("userDao",UserDao.class);
     }
-
-    @Test
-    public void get() throws SQLException{
-
-        Integer id = 1;
-        User user = userDao.getId(id);
-        assertThat(user.getId(), is(id));
-        assertThat(user.getName(), is(name));
-        assertThat(user.getPassword(), is(password));
-    }
-
-    @Test
-    public void insert() throws SQLException{
-
-        User user = new User();
-        user.setName(name);
-        user.setPassword(password);
-        userDao.insert(user);
-        assertThat(user.getId(), greaterThan(0));
-
-        User insertedUser = userDao.getId(user.getId());
-        assertThat(insertedUser.getName(), is(name));
-        assertThat(insertedUser.getPassword(), is(password));
-    }
-
-    @Test
-    public void update() throws SQLException {
-        User user = new User();
-        user.setName(name);
-        user.setPassword(password);
-        userDao.insert(user);
-
-        String updatedName = "도현";
-        String updatedPassword = "0000";
-
-        user.setName(updatedName);
-        user.setPassword(updatedPassword);
-
-        userDao.update(user);
-
-        User updatedUser = userDao.getId(user.getId());
-        assertThat(updatedUser.getName(), is(updatedName));
-        assertThat(updatedUser.getPassword(), is(updatedPassword));
-    }
-
-    @Test
-    public void delete() throws SQLException {
-        User user = new User();
-        user.setName(name);
-        user.setPassword(password);
-        userDao.insert(user);
-
-        userDao.delete(user.getId());
-
-        User deletedUser = userDao.getId(user.getId());
-
-        assertThat(deletedUser, IsNull.nullValue());
-    }
+//
+//    @Test
+//    public void get() throws SQLException{
+//
+//        Integer id = 1;
+//        User user = userDao.getId(id);
+//        assertThat(user.getId(), is(id));
+//        assertThat(user.getName(), is(name));
+//        assertThat(user.getPassword(), is(password));
+//    }
+//
+//    @Test
+//    public void insert() throws SQLException{
+//
+//        User user = new User();
+//        user.setName(name);
+//        user.setPassword(password);
+//        userDao.insert(user);
+//        assertThat(user.getId(), greaterThan(0));
+//
+//        User insertedUser = userDao.getId(user.getId());
+//        assertThat(insertedUser.getName(), is(name));
+//        assertThat(insertedUser.getPassword(), is(password));
+//    }
+//
+//    @Test
+//    public void update() throws SQLException {
+//        User user = new User();
+//        user.setName(name);
+//        user.setPassword(password);
+//        userDao.insert(user);
+//
+//        String updatedName = "도현";
+//        String updatedPassword = "0000";
+//
+//        user.setName(updatedName);
+//        user.setPassword(updatedPassword);
+//
+//        userDao.update(user);
+//
+//        User updatedUser = userDao.getId(user.getId());
+//        assertThat(updatedUser.getName(), is(updatedName));
+//        assertThat(updatedUser.getPassword(), is(updatedPassword));
+//    }
+//
+//    @Test
+//    public void delete() throws SQLException {
+//        User user = new User();
+//        user.setName(name);
+//        user.setPassword(password);
+//        userDao.insert(user);
+//
+//        userDao.delete(user.getId());
+//
+//        User deletedUser = userDao.getId(user.getId());
+//
+//        assertThat(deletedUser, IsNull.nullValue());
+//    }
 
 }

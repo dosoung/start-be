@@ -24,7 +24,7 @@ public class UserController {
             , HttpSession session) {
         User user = (User) session.getAttribute("user");
         if(user == null)
-            user = userDao.getId(id);
+            user = userDao.findById(id).get();
         session.setAttribute("user",User.builder().name("Session").build());
         System.out.println(user);
         return user;
