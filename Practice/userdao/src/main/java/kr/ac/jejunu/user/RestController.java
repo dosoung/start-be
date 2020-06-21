@@ -12,13 +12,14 @@ public class RestController {
     private final UserDao userDao;
 
     @GetMapping("/{id")
-    public  User get(@PathVariable("id") Integer id ) {
-      return userDao.getId(id);
+    public User get(@PathVariable("id") Integer id) {
+        return userDao.getId(id);
     }
 
     @PostMapping
-    public  User create(@RequestBody User user) {
-        userDao.insert(user);;
+    public User create(@RequestBody User user) {
+        userDao.insert(user);
+        ;
         return user;
     }
 }

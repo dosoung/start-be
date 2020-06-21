@@ -16,7 +16,7 @@ public class WebInitializer implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext applicationContext = new AnnotationConfigWebApplicationContext();
         applicationContext.scan("kr.ac.jejunu.user");
         ServletRegistration.Dynamic servletRegistration;
-        servletRegistration = servletContext.addServlet("dispatcher",new DispatcherServlet(applicationContext));
+        servletRegistration = servletContext.addServlet("dispatcher", new DispatcherServlet(applicationContext));
         servletRegistration.setLoadOnStartup(1);
         servletRegistration.addMapping("/");
 

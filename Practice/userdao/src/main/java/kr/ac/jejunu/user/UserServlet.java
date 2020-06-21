@@ -22,8 +22,8 @@ public class UserServlet extends GenericServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
         System.out.println("************ init *************");
-        ApplicationContext applicationContext= new  AnnotationConfigApplicationContext("kr.ac.jejunu.user");
-        this.userDao = applicationContext.getBean("userDao",UserDao.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext("kr.ac.jejunu.user");
+        this.userDao = applicationContext.getBean("userDao", UserDao.class);
         super.init(config);
     }
 
@@ -34,7 +34,7 @@ public class UserServlet extends GenericServlet {
         StringBuffer stringBuffer = new StringBuffer();
         stringBuffer.append("<html>");
         stringBuffer.append("<h1>");
-        stringBuffer.append(String.format("Hello %s!!!",user.getName()));
+        stringBuffer.append(String.format("Hello %s!!!", user.getName()));
         stringBuffer.append("</h1>");
         stringBuffer.append("</html>");
         res.setContentType("text/html;charset=UTF-8");

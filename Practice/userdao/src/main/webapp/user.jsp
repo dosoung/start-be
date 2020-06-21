@@ -6,8 +6,8 @@
 
 <%
     ApplicationContext applicationContext = new AnnotationConfigApplicationContext("kr.ac.jejunu.user");
-    UserDao userDao = applicationContext.getBean("userDao",UserDao.class);
-    User user =userDao.getId(24);
+    UserDao userDao = applicationContext.getBean("userDao", UserDao.class);
+    User user = userDao.getId(24);
 %>
 <html>
 <h1>

@@ -23,9 +23,9 @@ public class UserController {
     public User getUser(@RequestParam("id") Integer id, HttpServletRequest request, HttpServletResponse response
             , HttpSession session) {
         User user = (User) session.getAttribute("user");
-        if(user == null)
+        if (user == null)
             user = userDao.getId(id);
-        session.setAttribute("user",User.builder().name("Session").build());
+        session.setAttribute("user", User.builder().name("Session").build());
         System.out.println(user);
         return user;
     }
@@ -40,23 +40,23 @@ public class UserController {
 
     }
 
-    @RequestMapping(path="/upload" , method= RequestMethod.POST)
-    public ModelAndView upload(@RequestParam("file")MultipartFile file, HttpServletRequest request) throws IOException {
-        File path = new File(request.getServletContext().getRealPath("/")+"/WEB-INF/static/" + file.getOriginalFilename());
+    @RequestMapping(path = "/upload", method = RequestMethod.POST)
+    public ModelAndView upload(@RequestParam("file") MultipartFile file, HttpServletRequest request) throws IOException {
+        File path = new File(request.getServletContext().getRealPath("/") + "/WEB-INF/static/" + file.getOriginalFilename());
         FileOutputStream fileOutputStream = new FileOutputStream(path);
         BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream);
         bufferedOutputStream.write(file.getBytes());
         bufferedOutputStream.close();
 
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("url","/images/"+ file.getOriginalFilename());
+        modelAndView.addObject("url", "/images/" + file.getOriginalFilename());
         return modelAndView;
     }
 
     @ExceptionHandler(Exception.class)
     public ModelAndView error(Exception e) {
         ModelAndView modelAndView = new ModelAndView("error");
-        modelAndView.addObject("e",e);
+        modelAndView.addObject("e", e);
         return modelAndView;
     }
 }

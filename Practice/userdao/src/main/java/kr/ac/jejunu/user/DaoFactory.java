@@ -23,7 +23,7 @@ public class DaoFactory {
     @Value("${db.password}")
     private String password;
 
-//    @Bean
+    //    @Bean
 //    public UserDao userDao() throws ClassNotFoundException {
 //        return new UserDao(jdbcContext());
 //    }
@@ -31,10 +31,11 @@ public class DaoFactory {
     public JdbcTemplate jdbcContext() throws ClassNotFoundException {
         return new JdbcTemplate(dataSource());
     }
-    @Bean
-    public DataSource dataSource()  {
 
-        SimpleDriverDataSource dataSource= new SimpleDriverDataSource();
+    @Bean
+    public DataSource dataSource() {
+
+        SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         try {
             dataSource.setDriverClass((Class<? extends Driver>) Class.forName(className));
         } catch (ClassNotFoundException e) {
@@ -44,5 +45,5 @@ public class DaoFactory {
         dataSource.setUsername(username);
         dataSource.setPassword(password);
         return dataSource;
-        }
     }
+}

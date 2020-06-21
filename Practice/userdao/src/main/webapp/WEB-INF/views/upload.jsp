@@ -4,10 +4,10 @@
 <h1>
     File upload!!!!!
 </h1>
-<form action ="/upload" method="post" enctype="multipart/form-data">
-    <input type="file" name="file" />
-    <input type="submit" />
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <input type="submit"/>
 </form>
-<img src="${url}" />
+<img src="${url}"/>
 
 </html>

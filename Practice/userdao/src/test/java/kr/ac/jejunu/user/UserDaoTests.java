@@ -27,11 +27,11 @@ public class UserDaoTests {
 //        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("daoFactory.xml");
 
 //        ApplicationContext applicationContext = new GenericGroovyApplicationContext("daoFactory.groovy");
-        userDao = applicationContext.getBean("userDao",UserDao.class);
+        userDao = applicationContext.getBean("userDao", UserDao.class);
     }
 
     @Test
-    public void get() throws SQLException{
+    public void get() throws SQLException {
 
         Integer id = 1;
         User user = userDao.getId(id);
@@ -41,7 +41,7 @@ public class UserDaoTests {
     }
 
     @Test
-    public void insert() throws SQLException{
+    public void insert() throws SQLException {
 
         User user = new User();
         user.setName(name);

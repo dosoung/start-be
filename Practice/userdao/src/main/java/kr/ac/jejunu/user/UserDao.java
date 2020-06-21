@@ -22,13 +22,13 @@ public class UserDao {
 //        this.jdbcTemplate = jdbcTemplate;
 //    }
 
-    public User getId(Integer id)  {
+    public User getId(Integer id) {
 
-        Object[] params = new Object[] {id};
+        Object[] params = new Object[]{id};
         String sql = "select id,name,password from userinfo where id=?";
-        return jdbcTemplate.query(sql,params, rs -> {
+        return jdbcTemplate.query(sql, params, rs -> {
             User user = null;
-            if(rs.next()) {
+            if (rs.next()) {
                 user = new User();
                 user.setId(rs.getInt("id"));
                 user.setName(rs.getString("name"));
@@ -38,9 +38,9 @@ public class UserDao {
         });
     }
 
-    public void insert(User user)  {
+    public void insert(User user) {
 
-        Object[] params = new Object[] {user.getName(),user.getPassword()};
+        Object[] params = new Object[]{user.getName(), user.getPassword()};
         String sql = "insert into userinfo(name,password)value(?,?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(con -> {
@@ -50,23 +50,23 @@ public class UserDao {
                 preparedStatement.setObject(i + 1, params[i]);
             }
             return preparedStatement;
-        },keyHolder);
+        }, keyHolder);
         user.setId(keyHolder.getKey().intValue());
     }
 
-    public void update(User user){
-        String sql ="update userinfo set name =?,password=? where id=?";
-        Object[] params = new Object[] {user.getName(),user.getPassword(),user.getId()};
+    public void update(User user) {
+        String sql = "update userinfo set name =?,password=? where id=?";
+        Object[] params = new Object[]{user.getName(), user.getPassword(), user.getId()};
 
-        jdbcTemplate.update(sql,params);
+        jdbcTemplate.update(sql, params);
 
     }
 
     public void delete(Integer id) {
-        Object[] params = new Object[] {id};
+        Object[] params = new Object[]{id};
         String sql = "delete from userinfo where id=?";
 
-        jdbcTemplate.update(sql,params);
+        jdbcTemplate.update(sql, params);
 
     }
 
